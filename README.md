@@ -1,12 +1,33 @@
 # Credit
 
 A big thanks for publishing the heart-disease dataset to the following:
-   Hungarian Institute of Cardiology. Budapest: Andras Janosi, M.D.
-   University Hospital, Zurich, Switzerland: William Steinbrunn, M.D.
-   University Hospital, Basel, Switzerland: Matthias Pfisterer, M.D.
-   V.A. Medical Center, Long Beach and Cleveland Clinic Foundation: Robert Detrano, M.D., Ph.D.
+- Hungarian Institute of Cardiology. Budapest: Andras Janosi, M.D.
+- University Hospital, Zurich, Switzerland: William Steinbrunn, M.D.
+- University Hospital, Basel, Switzerland: Matthias Pfisterer, M.D.
+- V.A. Medical Center, Long Beach and Cleveland Clinic Foundation: Robert Detrano, M.D., Ph.D.
 
+Another thanks to UC Irvine for hosting the dataset [here](https://uci-ics-mlr-prod.aws.uci.edu/dataset/45/heart+disease)
 Thank you!
+
+# Prerequistes to run the code.
+Note that this project utilizes two languages: Python and R.
+Seconadrily this project was tested and run on Ubuntu.
+
+This was made and tested with Python 3.12.3. No additional libraries outside of the standard included libraries are needed for Python.
+The R version that was used was 4.3.3 and requires the following libraries:
+- tidyverse
+- dplyr
+- readxl
+
+## Setup:
+```bash
+ sudo apt update && apt install python3 r-base -y
+```
+R is more complicated, depending on your distribution you may need to compile the R libraries.
+This may require having a compiler such as GCC installed and up to date. [R-Cran Documentation](https://cran.r-project.org/bin/linux/ubuntu/fullREADME.html)
+
+For further troubleshooting [UC Santa Barbra](https://pages.github.nceas.ucsb.edu/NCEAS/Computing/installing_r_on_ubuntu.html#basic-r-package-installation) has a great guide on how to solve most problems you might encounter.
+
 
 # Heart Disease Databases
 
@@ -147,15 +168,15 @@ Missing Attribute Values: Several.  Distinguished with value -9.0.
 
 ### Expanded definitions and explanations of variables
 
-2 ccf -> in he final data, I think its removed.
+2 ccf -> in the final data, I think its removed.
 
 9 pncaden -> It is the sum of 5, 6, 7.
 
-11 htn -> I believe that this is associated on whether or not the patient has hypertension. read more here:[Cleveland Clinic](https://my.clevelandclinic.org/health/diseases/21840-hypertensive-heart-disease)
+11 htn -> I believe that this is associated on whether or not the patient has hypertension. Read more here:[Cleveland Clinic](https://my.clevelandclinic.org/health/diseases/21840-hypertensive-heart-disease)
 
 36 dummy -> Is an exact clone of an existing column in the dataset. Can safely be removed.
 
-39 xhypo -> I believe that this is a yes or no based on whether or not the patient has hypoxemia. read more here: [Cleveland Clinic](https://my.clevelandclinic.org/health/diseases/23063-hypoxia) 
+39 xhypo -> I believe that this is a yes or no based on whether or not the patient has hypoxemia. Read more here: [Cleveland Clinic](https://my.clevelandclinic.org/health/diseases/23063-hypoxia) 
 
 --- 
 
@@ -174,7 +195,7 @@ ST depression -> This occurs when the ST segment ends up **below** the **PR line
 
 43 rldv5e -> Same as above but during exercise
 
-42 and 43 cannot be justified without further knowledge of which I do not possess. So assume I am wrong.
+42 and 43 cannot be justified without further knowledge of which I do not possess. Assume the definitions provided for 42 and 43 are incorrect.
 
 
 ---
